@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,3 +63,6 @@
     <script>$(function(){$('input').iCheck({checkboxClass:'icheckbox_square-blue',radioClass:'iradio_square-blue',increaseArea:'20%'});});</script>
   </body>
 </html>
+=======
+<h1>Login Page</h1>
+>>>>>>> 3c56f91571a5dca25d8e5b7f204a9087a784e268
