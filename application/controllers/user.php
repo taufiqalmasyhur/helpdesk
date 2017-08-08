@@ -25,6 +25,8 @@
 		public function do_Logout()
 		{
 			
+            $this->session->session_destroy();
+            redirect ('page/login');
 		}
 		
 		public function do_Login()
@@ -46,7 +48,11 @@
             {
                 
                 $userrole = $this->user_model->authorization($username, $password);
-
+                $data = array(
+                        'username' => $username,
+                        'user_role' => $userrole
+                    ); 
+                $this->session->set_userdata($data);
                 if ($userrole = "1") 
                 {
                     redirect('page/user');
