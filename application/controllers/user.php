@@ -12,9 +12,15 @@
 
         {
             
-        public function do_InsertRequest()
+        public function do_InsertTicket()
         {
-
+            $title = $this->input->post('tb_title');
+            $desc = $this->input->post('tb_desc');
+            $attachment = $this->input->post('tb_attachment');
+            $id = $this->session->userdata('user_id');
+            $this->load->model('user_model');
+            $this->user_model->insertticket($id, $title, $desc, $attachment);
+            return 'page/home';
         }
 
         public function do_Comment()
@@ -48,9 +54,12 @@
             {
                 
                 $userrole = $this->user_model->authorization($username, $password);
+                $user_id = $this->user_model->getID($username, $password);
                 $data = array(
                         'username' => $username,
-                        'user_role' => $userrole
+                        'user_id' => $user_id,
+                        'user_role' => $userrole,
+                        'logged_in' => TRUE
                     ); 
                 $this->session->set_userdata($data);
                 if ($userrole = "1") 
