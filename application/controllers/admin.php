@@ -4,9 +4,19 @@
      */
     class Admin extends CI_Controller {
         
-        function index() {
+        public function index() {
             
         }
+
+        public function do_Logout()
+		{
+			
+		}
+		
+		public function do_Login()
+		{
+			
+		}
     }
     
 ?>
