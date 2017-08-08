@@ -25,7 +25,12 @@
 
         public function do_Comment()
         {
-        	
+        	$comment = $this->input->post('tb_comment');
+            $ticket_id = $this->input->post('tb_ticketid');
+            $auth_id = $this->session->userdata('user_id');
+            $this->load->model('user_model');
+            $this->user_model->insertcomment($ticket_id, $auth_id, $comment);
+            return 'page/';
         }
 		
 		public function do_Logout()
