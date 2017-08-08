@@ -27,7 +27,6 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-
 	<style>
 		body {
 			background: url(bg.jpg) no-repeat top right fixed;
@@ -80,10 +79,12 @@
 			visibility: visible
 		}
 	</style>
+
 	<body>
 		<div class="login-box">
 
-			<form action="<?php echo ('user/do_Login');?>" method="post">
+			<form action="" method="post">
+
 				<div class="form-signin">
 					<h2 align="center" class="form-signin-heading">Log in Helpdesk</h2>
 					<div class="row">
