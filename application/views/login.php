@@ -7,7 +7,7 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<link href="favicon.ico" type="image/icon" rel="icon">
+		<link href="/helpdesk/external/media/favicon.ico" type="image/icon" rel="icon">
 
 		<title>AP2 IT HelpDesk</title>
 
@@ -15,7 +15,7 @@
 		<link href="/helpdesk/external/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="login.css" rel="stylesheet">
+		<link href="/helpdesk/external/css/custom.css" rel="stylesheet">
 
 		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -27,74 +27,23 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<style>
-		body {
-			background: url(bg.jpg) no-repeat top right fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover
-		}
-		.form-signin {
-			max-width: 400px;
-			padding: 25px 25px 25px;
-			margin: 0 auto;
-			background-color: hsla(0,0%,0%,.13);
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-			box-shadow: 0 1px 2px rgba(0,0,0,.05);
-			margin-top: 150px
-		}
-		.form-signin .form-signin-heading, .form-signin .checkbox {
-			margin-top: 5px;
-			margin-bottom: 10px;
-			color: #fff
-		}
-		.form-signin input[type="text"], .form-signin input[type="password"] {
-			font-size: 16px;
-			height: auto;
-			margin-bottom: 15px;
-			padding: 7px 9px
-		}
-		.alert-width {
-			max-width: 595px;
-			margin: 0 auto;
-			padding-top: 20px
-		}
-		.text-footer {
-			color: #fff
-		}
-		#content {
-			font-family: Verdana, Geneva, Arial, sans-serif;
-			background-color: red;
-			margin-left: -125px;
-			position: absolute;
-			top: -35px;
-			left: 50%;
-			width: 250px;
-			height: 70px;
-			visibility: visible
-		}
-	</style>
+	
+	<style>.form-signin{max-width:400px;padding:25px 25px 25px;margin:0 auto;background-color:hsla(0,0%,0%,.13);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:0 1px 2px rgba(0,0,0,.05);box-shadow:0 1px 2px rgba(0,0,0,.05);margin-top:150px}.form-signin .form-signin-heading,.form-signin .checkbox{margin-top:5px;margin-bottom:10px;color:#fff}.form-signin input[type="text"],.form-signin input[type="password"]{font-size:16px;height:auto;margin-bottom:15px;padding:7px 9px}.alert-width{max-width:595px;margin:0 auto;padding-top:20px}}</style>
 
-	<body>
+	<body class="login-body">
 		<div class="login-box">
 
 			<form action="" method="post">
-
 				<div class="form-signin">
 					<h2 align="center" class="form-signin-heading">Log in Helpdesk</h2>
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<input type="text" id="tb_username" name="username" class="form-control" placeholder="Username">
+							<input type="text" id="username" name="username" class="form-control" placeholder="Username">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<input type="password" id="tb_password" name="password" class="form-control" placeholder="Password">
+							<input type="password" id="password" name="password" class="form-control" placeholder="Password">
 						</div>
 					</div>
 					<div class="row">
