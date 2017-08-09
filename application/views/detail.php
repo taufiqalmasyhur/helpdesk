@@ -138,8 +138,8 @@
 	
 			  
 	<div class="container detail-issue">
-		<button type="button" class="btn btn-default btn-xs">Edit</button>
-		<button type="button" class="btn btn-default btn-xs">Comment</button>
+		<button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</button>
+		<button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment</button>
 		<button type="button" class="btn btn-default btn-xs">Assign</button>
 		
 		<div class="btn-group">
@@ -150,13 +150,25 @@
 		
 		<div class="detail-issue-in">
 			<h4>Details </h4>
-			<p>Status: </p>
-			<p>Priority: </p>
+			<p>Status: <span class="label label-default">Open</span></p>
+			<p>Priority: High</p>
+		</div>
+		<div class="detail-issue-in">		
 			<h4>People</h4>
+			<p>Assignee: Engineer 1</p>
+			<p>Customer: Customer 1</p>
+		</div>
+		<div class="detail-issue-in">		
 			<h4>Description</h4>
+			<p>Lorem ipsum dolor sil amet.</p>
+		</div>
+		<div class="detail-issue-in">		
 			<h4>Attachment</h4>
+		</div>
+		<div class="detail-issue-in">		
 			<h4>Comments</h4>
 		</div>
+		
 
 	</div>
 	
